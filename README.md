@@ -56,10 +56,6 @@ Domain Names: Human-readable web addresses (like example.com).
 
 Version Control: Tools like Git and platforms like GitHub to track code changes.
 
-
-
----
-
 5. Additional Concepts
 
 Responsive Design: Websites must work on desktops, tablets, and phones.
@@ -67,12 +63,6 @@ Responsive Design: Websites must work on desktops, tablets, and phones.
 Security Basics: HTTPS, authentication, and data protection.
 
 Performance Optimization: Fast loading speeds, caching, and minimizing code.
-
-SEO (Search Engine Optimization): Ensuring your site ranks in Google searches.
-
-
-
----
 
 ✅ Summary:
 Web development = Frontend (HTML, CSS, JS) + Backend (databases, server) + Deployment (hosting, domains).
