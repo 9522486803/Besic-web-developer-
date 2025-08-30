@@ -79,7 +79,5 @@ Web development = Frontend (HTML, CSS, JS) + Backend (databases, server) + Deplo
 Once you master the basics, you can specialize in frontend, backend, or full-stack development.
 
 
----
 
-Would you like me to create a step-by-step learning roadmap (beginner → advanced) for web development so you can follow along?
 
