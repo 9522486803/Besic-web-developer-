@@ -69,5 +69,47 @@ Web development = Frontend (HTML, CSS, JS) + Backend (databases, server) + Deplo
 Once you master the basics, you can specialize in frontend, backend, or full-stack development.
 
 
-
+🔹 Step 1: Strengthen HTML
+Learn semantic tags: <header>, <section>, <article>, <footer>.
+Forms and inputs: <form>, <input>, <textarea>, <select>, validation attributes (required, pattern).
+Media tags: <audio>, <video>, <picture>.
+Accessibility basics: alt, aria-label, tabindex.
+✅ Practice: Build a resume page using only semantic HTML.
+🔹 Step 2: Enhance CSS
+Selectors: attribute selectors, pseudo-classes (:hover, :nth-child()), pseudo-elements (::before, ::after).
+Box Model & positioning (relative, absolute, sticky, fixed).
+Flexbox & Grid layouts.
+CSS variables (--main-color).
+Transitions, animations, and transforms.
+✅ Practice: Clone a modern landing page design (like a product site) with only HTML + CSS.
+🔹 Step 3: JavaScript Fundamentals
+Variables (let, const), functions, arrays, objects.
+Loops and conditionals.
+Events (onclick, addEventListener).
+DOM selection:
+Copy code
+Js
+document.getElementById("id")
+document.querySelector(".class")
+DOM manipulation:
+Copy code
+Js
+element.textContent = "Hello";
+element.style.color = "blue";
+Creating elements dynamically:
+Copy code
+Js
+let div = document.createElement("div");
+div.textContent = "New Element";
+document.body.appendChild(div);
+✅ Practice: Build a to-do list app (add/remove tasks dynamically).
+🔹 Step 4: Projects for DOM Practice
+Image Slider/Carousel
+– Use JS to change images automatically or on button click.
+Form Validation
+– Check email, password strength, etc., before submission.
+Theme Switcher
+– Toggle between light/dark mode with a button.
+Mini Games
+– Rock-paper-scissors, quiz app, or number guessing.
 
