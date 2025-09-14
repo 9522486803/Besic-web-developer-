@@ -167,3 +167,130 @@ Practice → छोटे projects (To-Do App, Weather App, Portfolio, E-commerc
 Deployment → Netlify, Vercel, GitHub Pages।
 📌 Summary:
 अगर आप advanced CSS (Grid, Flexbox, Animations, Responsive Design) और advanced JavaScript (ES6+, DOM, APIs, Async, Frameworks) सीखते हैं तो आप professional, interactive और responsive websites बना सकते हैं।
+🔹 Project Ideas (HTML + CSS + JS)
+To-Do List App
+HTML: structure (input, buttons, task list)
+CSS: design (colors, hover effects, animations)
+JS: add/remove tasks, mark as complete, save to local storage
+Calculator
+HTML: buttons + display
+CSS: grid layout, button styling
+JS: perform calculations
+Image Slider / Carousel
+HTML: images + controls
+CSS: transitions/animations
+JS: auto-slide, next/prev buttons
+Form Validation
+HTML: input fields
+CSS: highlight errors
+JS: check user input (email, password strength, etc.)
+Digital Clock / Stopwatch
+HTML: display
+CSS: clock style
+JS: update time every second
+🔥 Example Project: To-Do List App
+Here’s a fully working mini project with all three:
+Copy code
+Html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do List App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input {
+      width: 75%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+    button {
+      padding: 8px 12px;
+      margin-left: 5px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px;
+      margin: 5px 0;
+      background: #eee;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    li.done {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .delete {
+      background: red;
+      border: none;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a task">
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script>
+    function addTask() {
+      let taskInput = document.getElementById("taskInput");
+      let taskText = taskInput.value.trim();
+      if (taskText === "") return;
+
+      let li = document.createElement("li");
+      li.innerHTML = `${taskText} <button class="delete">X</button>`;
+      
+      li.addEventListener("click", function(e) {
+        if (e.target.classList.contains("delete")) {
+          li.remove();
+        } else {
+          li.classList.toggle("done");
+        }
+      });
+
+      document.getElementById("taskList").appendChild(li);
+      taskInput.value = "";
+    }
+  </script>
+</body>
+</html>
+👉 This combines:
+HTML → structure (input, button, ul)
+CSS → layout & style (clean UI with hover effects)
+JavaScript → logic (add/delete/mark tasks complete)
